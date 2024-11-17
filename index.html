@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Order Your Favorite Chocolate</h1>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="todo.html">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <section id="filters">
+        <h2>Filter and Sort</h2>
+        <label for="category">Category:</label>
+        <select id="category" onchange="filterProducts()">
+            <option value="all">All</option>
+            <option value="dark">Dark</option>
+            <option value="milk">Milk</option>
+            <option value="white">White</option>
+        </select>
+
+        <label for="price">Price:</label>
+        <select id="price" onchange="filterProducts()">
+            <option value="all">All</option>
+            <option value="low">Low to High</option>
+            <option value="high">High to Low</option>
+        </select>
+
+        <label for="sort">Sort by Rating:</label>
+        <select id="sort" onchange="sortProducts()">
+            <option value="desc">Highest Rating</option>
+            <option value="asc">Lowest Rating</option>
+        </select>
+    </section>
+
+    <section id="products">
+        <h2>Our Delicious Chocolates</h2>
+        <div id="product-list">
+            <div class="product">
+                <img src="https://www.whitakerschocolates.com/cdn/shop/articles/Why-is-Dark-Chocolate-Bitter_720x720.jpg?v=1715958772" alt="Dark Chocolate Bar">
+                <h3>Dark Chocolate</h3>
+                <p>Rich, bittersweet dark chocolate for true chocolate lovers.</p>
+                <div class="price">$5.99</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.qBCf3OdxexCOllRAwQXcmQHaHa&pid=Api&P=0&h=180" alt="Milk Chocolate Bar">
+                <h3>Milk Chocolate</h3>
+                <p>Smooth, creamy milk chocolate for a delicious treat.</p>
+                <div class="price">$4.49</div>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.OqogOTAdAVgD2udT33fDoAHaFj&pid=Api&P=0&h=180" alt="Belgium Chocolate Bar">
+                <h3>Belgium Chocolate</h3>
+                <p>Smooth, creamy milk chocolate for a delicious treat.</p>
+                <div class="price">$4.49</div>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Chocolate Ordering Website</p>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+</html>
